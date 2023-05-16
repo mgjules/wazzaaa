@@ -2,7 +2,7 @@ project_name: wazzaaa
 dist: ./bin
 builds:
   - env:
-      - CGO_ENABLED=0
+      - CGO_ENABLED=1
     flags:
       - -trimpath
     ldflags:
