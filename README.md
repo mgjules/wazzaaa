@@ -15,6 +15,17 @@ Sends a whatsapp message to multiple recipients
 ## Usage
 
 ```shell
+❯ ./wazzaaa --help
+Usage of ./wazzaaa:
+  -message string
+    	message to send
+  -recipients string
+    	list of comma separated phone numbers
+```
+
+Example:
+
+```shell
 wazzaaa --recipients "xxxxxxxxxx,yyyyyyyyy" --message "Hello there..."
 ```
 
