@@ -10,13 +10,13 @@ import (
 	"syscall"
 
 	qrcodeTerminal "github.com/Baozisoftware/qrcode-terminal-go"
-	_ "github.com/mattn/go-sqlite3"
 	"go.mau.fi/whatsmeow"
 	waProto "go.mau.fi/whatsmeow/binary/proto"
 	"go.mau.fi/whatsmeow/store/sqlstore"
 	"go.mau.fi/whatsmeow/types"
 	waLog "go.mau.fi/whatsmeow/util/log"
 	"go.uber.org/multierr"
+	_ "modernc.org/sqlite"
 )
 
 func main() {
@@ -38,7 +38,7 @@ func main() {
 	}
 
 	dbLog := waLog.Stdout("Database", "DEBUG", true)
-	container, err := sqlstore.New("sqlite3", "file:wazzaaa.db?_foreign_keys=on", dbLog)
+	container, err := sqlstore.New("sqlite", "file:wazzaaa.db?_foreign_keys=on", dbLog)
 	if err != nil {
 		log.Fatal(err)
 	}
