@@ -38,7 +38,7 @@ func main() {
 	}
 
 	dbLog := waLog.Stdout("Database", "DEBUG", true)
-	container, err := sqlstore.New("sqlite", "file:wazzaaa.db?_foreign_keys=on", dbLog)
+	container, err := sqlstore.New("sqlite", "file:wazzaaa.db?_pragma=foreign_keys(1)", dbLog)
 	if err != nil {
 		log.Fatal(err)
 	}
