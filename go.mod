@@ -8,7 +8,7 @@ require (
 	github.com/Baozisoftware/qrcode-terminal-go v0.0.0-20170407111555-c0650d8dff0f
 	go.mau.fi/whatsmeow v0.0.0-20240619210240-329c2336a6f1
 	go.uber.org/multierr v1.11.0
-	modernc.org/sqlite v1.30.1
+	modernc.org/sqlite v1.30.2
 )
 
 require (
