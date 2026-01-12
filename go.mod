@@ -8,7 +8,7 @@ require (
 	github.com/mdp/qrterminal/v3 v3.2.1
 	go.mau.fi/whatsmeow v0.0.0-20250916115455-914d640cc83c
 	go.uber.org/multierr v1.11.0
-	modernc.org/sqlite v1.39.0
+	modernc.org/sqlite v1.43.0
 )
 
 require (
@@ -34,7 +34,7 @@ require (
 	golang.org/x/term v0.35.0 // indirect
 	golang.org/x/text v0.29.0 // indirect
 	google.golang.org/protobuf v1.36.9 // indirect
-	modernc.org/libc v1.66.9 // indirect
+	modernc.org/libc v1.66.10 // indirect
 	modernc.org/mathutil v1.7.1 // indirect
 	modernc.org/memory v1.11.0 // indirect
 	rsc.io/qr v0.2.0 // indirect
